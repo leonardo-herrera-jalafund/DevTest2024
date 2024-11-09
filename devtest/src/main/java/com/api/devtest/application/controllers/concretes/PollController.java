@@ -2,11 +2,9 @@ package com.api.devtest.application.controllers.concretes;
 
 import com.api.devtest.application.controllers.IPollController;
 import com.api.devtest.domain.models.Poll;
-import com.api.devtest.exceptions.ElementAlreadyExistException;
-import com.api.devtest.exceptions.NoMinimalOptionsPollException;
-import com.api.devtest.presentation.services.IPollService;
+import com.api.devtest.exceptions.poll.ElementAlreadyExistException;
+import com.api.devtest.exceptions.options.NoMinimalOptionsPollException;
 import com.api.devtest.presentation.services.concretes.InMemoryPollService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
