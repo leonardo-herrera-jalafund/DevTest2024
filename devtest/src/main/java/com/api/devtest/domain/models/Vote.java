@@ -1,6 +1,5 @@
 package com.api.devtest.domain.models;
 
-//import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,12 +9,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
-//@Table(name = "options")
-public class Option {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Vote {
     private Long id;
-    private String name;
-    private int votes;
+    private Long pollId;
+    private Long optionId;
+    private String voterEmail;
 }
