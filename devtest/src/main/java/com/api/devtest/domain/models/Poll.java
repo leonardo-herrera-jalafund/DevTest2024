@@ -15,9 +15,11 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "polls")
 public class Poll {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(name = "poll_id")
     private UUID id;
     private String title;
     private String description;
